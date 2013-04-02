@@ -1,0 +1,3 @@
+[submodule "ReactiveFormlets"]
+	path = ReactiveFormlets
+	url = git://github.com/jonsterling/ReactiveFormlets.git

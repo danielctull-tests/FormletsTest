@@ -16,7 +16,26 @@
 		24776709170B3A58004CAF83 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 24776708170B3A58004CAF83 /* Default.png */; };
 		2477670B170B3A58004CAF83 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2477670A170B3A58004CAF83 /* Default@2x.png */; };
 		2477670D170B3A58004CAF83 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2477670C170B3A58004CAF83 /* Default-568h@2x.png */; };
+		2477671F170B3BB7004CAF83 /* libReactiveFormlets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2477671C170B3BAE004CAF83 /* libReactiveFormlets.a */; };
+		24776722170B3C03004CAF83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24776721170B3C03004CAF83 /* ViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2477671B170B3BAE004CAF83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24776713170B3BAD004CAF83 /* ReactiveFormlets.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCD30F3916F64B4A00473BB8;
+			remoteInfo = ReactiveFormlets;
+		};
+		2477671D170B3BAE004CAF83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24776713170B3BAD004CAF83 /* ReactiveFormlets.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FCD30F4A16F64B4B00473BB8;
+			remoteInfo = ReactiveFormletsTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		247766F3170B3A58004CAF83 /* FormletsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormletsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +51,9 @@
 		24776708170B3A58004CAF83 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2477670A170B3A58004CAF83 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2477670C170B3A58004CAF83 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		24776713170B3BAD004CAF83 /* ReactiveFormlets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveFormlets.xcodeproj; path = ReactiveFormlets/ReactiveFormlets.xcodeproj; sourceTree = "<group>"; };
+		24776720170B3C03004CAF83 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24776721170B3C03004CAF83 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2477671F170B3BB7004CAF83 /* libReactiveFormlets.a in Frameworks */,
 				247766F7170B3A58004CAF83 /* UIKit.framework in Frameworks */,
 				247766F9170B3A58004CAF83 /* Foundation.framework in Frameworks */,
 				247766FB170B3A58004CAF83 /* CoreGraphics.framework in Frameworks */,
@@ -54,6 +77,7 @@
 				247766FC170B3A58004CAF83 /* FormletsTest */,
 				247766F5170B3A58004CAF83 /* Frameworks */,
 				247766F4170B3A58004CAF83 /* Products */,
+				24776713170B3BAD004CAF83 /* ReactiveFormlets.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +105,8 @@
 				24776705170B3A58004CAF83 /* AppDelegate.h */,
 				24776706170B3A58004CAF83 /* AppDelegate.m */,
 				247766FD170B3A58004CAF83 /* Supporting Files */,
+				24776720170B3C03004CAF83 /* ViewController.h */,
+				24776721170B3C03004CAF83 /* ViewController.m */,
 			);
 			path = FormletsTest;
 			sourceTree = "<group>";
@@ -97,6 +123,15 @@
 				2477670C170B3A58004CAF83 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24776714170B3BAD004CAF83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2477671C170B3BAE004CAF83 /* libReactiveFormlets.a */,
+				2477671E170B3BAE004CAF83 /* ReactiveFormletsTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,12 +173,35 @@
 			mainGroup = 247766EA170B3A58004CAF83;
 			productRefGroup = 247766F4170B3A58004CAF83 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 24776714170B3BAD004CAF83 /* Products */;
+					ProjectRef = 24776713170B3BAD004CAF83 /* ReactiveFormlets.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				247766F2170B3A58004CAF83 /* FormletsTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2477671C170B3BAE004CAF83 /* libReactiveFormlets.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactiveFormlets.a;
+			remoteRef = 2477671B170B3BAE004CAF83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2477671E170B3BAE004CAF83 /* ReactiveFormletsTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveFormletsTests.octest;
+			remoteRef = 2477671D170B3BAE004CAF83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		247766F1170B3A58004CAF83 /* Resources */ = {
@@ -166,6 +224,7 @@
 			files = (
 				24776703170B3A58004CAF83 /* main.m in Sources */,
 				24776707170B3A58004CAF83 /* AppDelegate.m in Sources */,
+				24776722170B3C03004CAF83 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
